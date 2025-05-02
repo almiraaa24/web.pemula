@@ -1,0 +1,184 @@
+body {  
+    margin: 0; 
+    font-family: Arial, sans-serif;  
+}
+
+.navbar {
+    background-color: rgba(236, 35, 179, 0.34);
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;   
+    padding: 0 20px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 21px;
+    z-index: 1001;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-toggle .bar {
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {  
+    margin: 0 15px; 
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover { 
+    color: #ddd; 
+}
+
+/* Responsive styles */
+@media (max-width: 768px) { 
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        padding: 0;
+    }
+
+    .nav-links.active { 
+        display: flex; 
+    }
+
+    .nav-links li {  
+        margin: 15px 0;  
+        text-align: center; 
+    }
+
+    .nav-links a { 
+        font-size: 20px; 
+    }
+}
+
+/* Home Section */
+.Home {
+    display: flex;  
+    margin-top: 60px; 
+    padding: 10px 20px;
+    background-color: hsla(67, 3%, 47%, 0.46);
+}
+
+.Home-col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Section Styles */
+.about, .skills, .portfolio, .contact {
+    padding: 60px 20px;
+    background-color: #fa97d2;
+    text-align: center;
+}
+
+/* Form Styling */
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* Skills Section */
+.skills {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+    color: #000;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.skill-bar .html {width: 90%; background-color: #e47ce8; text-align: center; padding: 10px; color: #fff;}
+.skill-bar .css {width: 80%; background-color: #f64ffc; text-align: center; padding: 10px; color: #fff;}
+.skill-bar .js {width: 65%; background-color: #f136f4; text-align: center; padding: 10px; color: #fff;}
+.skill-bar .php {width: 60%; background-color: #e240c5; text-align: center; padding: 10px; color: #fff;}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}

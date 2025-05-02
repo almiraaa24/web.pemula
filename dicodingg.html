@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">MyWebsite</a>
+                </div>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="Home">
+            <div class="Home-col left">
+                <div>
+                    <h1>Welcome to</h1>
+                    <p>My Personal Website</p>
+                </div>
+            </div>
+            <aside>
+                <a href="https://ibb.co.com/WvmH6PYG"><img src="https://i.ibb.co.com/QvyJfC1p/Whats-App-Image-2025-02-16-at-11-56-42-1c15c0ec.jpg" alt="Whats-App-Image-2025-02-16-at-11-56-42-1c15c0ec" border="0"></a>
+            </aside>
+        </section>
+        
+        <section class="about" id="about">
+            <h2>about me </h2>
+            <article>
+                <p>Halo, nama saya almira tungga dewi s. saya biasa dipanggil mira. Saya lahir di Bogor pada tanggal 24 november 2008. Saya berumur 16 tahun.
+                    Saya siswi kelas 10 dari sekolah SMKN 1 Ciomas, jurusan PPLG. Saya tinggal di kp kreteg, RT/RW 03/04 kecamatan ciomas, kabupaten Bogor. Hobi saya bermain badminton dan nonton drakor.</p>
+            </article>
+        </section>
+        
+        <div class="skills">
+            <h2>Skills me</h2>
+            
+            <div class="skill-bar">
+                <div class="html">HTML 90%</div>
+            </div>
+            
+            <div class="skill-bar">
+                <div class="css">CSS 80%</div>
+            </div>
+            
+            <div class="skill-bar">
+                <div class="js">JavaScript 65%</div>
+            </div>
+            
+            <div class="skill-bar">
+                <div class="php">PHP 60%</div>
+            </div>
+        </div>
+        
+        
+        <section class="portfolio" id="portfolio">
+            <h2>Portfolio </h2>
+            <article>
+                <p>Saya sudah membuat tabel, biodata, my website, daftar hadir, dan halaman login.</p>
+            </article>
+        </section>
+        
+        <section class="contact" id="contact">
+            <h2>Contact Form</h2>
+            <form id="contactForm" action="/action_page.php" onsubmit="clearForm(event)">
+                <fieldset>
+                    <legend>Informasi Kontak</legend>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+                    <label for="alamat">Alamat</label>
+                    <input type="text" id="alamat" name="alamat" placeholder="Your alamat..">
+        
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="boy">Boy</option>
+                        <option value="girl">Girl</option>
+                    </select>
+        
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+        
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 <strong>almira tungga d.s</strong></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
